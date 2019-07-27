@@ -1,16 +1,16 @@
-import React from 'react';
-import Counter from './Counter';
-import CountDisplay from './CountDisplay';
-import { CountProvider } from './count-context';
+import React, { Fragment } from 'react';
+import Counter from './components/Counter';
+import CountDisplay from './components/CountDisplay';
+import { CountProvider } from './context/count-context';
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <CountProvider>
         <CountDisplay />
         <Counter />
       </CountProvider>
-    </div>
+    </Fragment>
   );
 }
 
